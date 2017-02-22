@@ -7,7 +7,7 @@ class IndiQhy < Formula
   version "1.1.0.2439"
 
   depends_on 'cmake' => :build
-  depends_on 'polakovic/astronomy/libindi'
+  depends_on 'seanhoughton/astronomy/libindi'
   depends_on 'polakovic/astronomy/libqhy'
 
   def install

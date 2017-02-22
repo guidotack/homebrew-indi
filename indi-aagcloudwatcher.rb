@@ -7,7 +7,7 @@ class IndiAagcloudwatcher < Formula
   version "1.1.0.2578"
 
   depends_on 'cmake' => :build
-  depends_on 'polakovic/astronomy/libindi'
+  depends_on 'seanhoughton/astronomy/libindi'
 
   def install
     system "cmake", ".", "-DCMAKE_CXX_FLAGS=-march=core2", *std_cmake_args

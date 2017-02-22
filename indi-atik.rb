@@ -6,7 +6,7 @@ class IndiAtik < Formula
   sha256 '2fa3e2447b3f5b48bc85ca07f8e87b0e2632139579aae5801f7e5a34d21d4f29'
 
   depends_on 'cmake' => :build
-  depends_on 'polakovic/astronomy/libindi'
+  depends_on 'seanhoughton/astronomy/libindi'
 
   def install
     prefix.install "COPYRIGHT.txt"
