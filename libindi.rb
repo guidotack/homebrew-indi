@@ -8,8 +8,8 @@ class Libindi < Formula
   version "1.3.1"
 
   depends_on 'cmake' => :build
-  depends_on 'polakovic/astronomy/libnova'
-  depends_on 'polakovic/astronomy/libcfitsio'
+  depends_on 'seanhoughton/astronomy/libnova'
+  depends_on 'seanhoughton/astronomy/libcfitsio'
   depends_on 'libusb'
   depends_on 'gsl'
 

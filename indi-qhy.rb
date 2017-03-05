@@ -8,7 +8,7 @@ class IndiQhy < Formula
 
   depends_on 'cmake' => :build
   depends_on 'seanhoughton/astronomy/libindi'
-  depends_on 'polakovic/astronomy/libqhy'
+  depends_on 'seanhoughton/astronomy/libqhy'
 
   def install
     system "cmake", ".", "-DCMAKE_CXX_FLAGS=-march=core2", *std_cmake_args
