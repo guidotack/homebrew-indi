@@ -1,9 +1,9 @@
 homebrew-astronomy
 ==================
 
-These formulae provide software related to Astronomy and Astrophysics.
+These formulae provide software related to the INDI telescope automation tools.
 
-(forked from polakovic's svn version)
+(forked from polakovic's svn homebrew-astronomy repo)
 
 How do I install these formulae?
 --------------------------------
@@ -14,4 +14,4 @@ If the formula conflicts with one from mxcl/master or another tap, you can `brew
 You can also install via URL:
 
 
-    brew install https://raw.github.com/seanhoughton/homebrew-astronomy/master/<formula>.rbt
+    brew install https://raw.github.com/seanhoughton/homebrew-indi/master/<formula>.rbt

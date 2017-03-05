@@ -2,16 +2,17 @@ require 'formula'
 
 class IndiQhy < Formula
   homepage 'http://www.indilib.org'
-  url 'http://svn.code.sf.net/p/indi/code/trunk/3rdparty/indi-qhy', :using => :svn, :revision => '2439'
-  head 'http://svn.code.sf.net/p/indi/code/trunk/3rdparty/indi-qhy', :using => :svn 
-  version "1.1.0.2439"
+  head 'https://github.com/indilib/indi.git', :using => :git, :tag => '1.4.1'
+  url 'https://github.com/indilib/indi/archive/v1.4.1.zip'
+
+  version "1.4.1"
 
   depends_on 'cmake' => :build
   depends_on 'seanhoughton/astronomy/libindi'
   depends_on 'seanhoughton/astronomy/libqhy'
 
   def install
-    system "cmake", ".", "-DCMAKE_CXX_FLAGS=-march=core2", *std_cmake_args
+    system "cmake", "3rdparty/indi-qhy", *std_cmake_args
     system "make", "install"
   end
 end
