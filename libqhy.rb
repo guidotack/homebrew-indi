@@ -2,13 +2,15 @@ require 'formula'
 
 class Libqhy < Formula
   homepage 'http://www.indilib.org'
-  url 'http://svn.code.sf.net/p/indi/code/trunk/3rdparty/libqhy', :using => :svn, :revision => '2439'
-  version "1.1.0.2439"
+  head 'https://github.com/indilib/indi.git', :using => :git, :tag => '1.4.1'
+  url 'https://github.com/indilib/indi/archive/v1.4.1.zip'
+
+  version "1.4.1"
 
   depends_on 'cmake' => :build
 
   def install
-    system "cmake", ".", "-DCMAKE_CXX_FLAGS=-march=core2", *std_cmake_args
+    system "cmake", "3rdparty/libqhy", *std_cmake_args
     system "make", "install"
   end
 
