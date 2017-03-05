@@ -2,9 +2,9 @@ require "formula"
 
 class Libcfitsio < Formula
   homepage "http://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html"
-  url "http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio3370.tar.gz"
-  sha256 "092897c6dae4dfe42d91d35a738e45e8236aa3d8f9b3ffc7f0e6545b8319c63a"
-  version "3.370"
+  url "http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio3410.tar.gz"
+  sha256 "a556ac7ea1965545dcb4d41cfef8e4915eeb8c0faa1b52f7ff70870f8bb5734c"
+  version "3.410"
 
   def install
     ENV.append "CFLAGS", "-march=core2"
