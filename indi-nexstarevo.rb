@@ -1,6 +1,6 @@
 require 'formula'
 
-class IndiNexStarEvo < Formula
+class IndiNexstarevo < Formula
   homepage 'http://www.indilib.org'
   head 'https://github.com/indilib/indi.git', :using => :git
   url 'https://github.com/indilib/indi/archive/master.zip'
