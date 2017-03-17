@@ -2,10 +2,12 @@ require 'formula'
 
 class Libindi < Formula
   homepage 'http://www.indilib.org'
-  head 'https://github.com/indilib/indi.git', :using => :git, :tag => '1.4.1'
-  url 'https://github.com/indilib/indi/archive/v1.4.1.zip'
+  head 'https://github.com/indilib/indi.git', :using => :git
+  # , :tag => '1.4.1'
+  # url 'https://github.com/indilib/indi/archive/v1.4.1.zip'
+  url 'https://github.com/indilib/indi/archive/master.zip'
 
-  version "1.4.1"
+  version "1.4.1-dev"
 
   depends_on 'cmake' => :build
   depends_on 'libnova'
